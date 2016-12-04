@@ -44,21 +44,12 @@ h1, h2, h3 {
 }
 
 
-.navbar-default .navbar-nav > li > a {
-    color: white;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-    opacity: 0.70;
-    color:white;
-}
-
+.navbar-default .navbar-nav > li > a, 
 .navbar-default .navbar-brand {
     color: white;
-}
-
-.navbar-default .navbar-brand:hover {
-    color: white;
-    opacity: 0.70;
-
+     &:hover{
+        opacity: 0.70;
+        color:white;
+     }
+   
 }
