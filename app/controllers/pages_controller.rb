@@ -5,3 +5,6 @@ end
 
 def about
 end 
+
+def jobs
+end
