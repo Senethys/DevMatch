@@ -1,4 +1,4 @@
-class ContactController < ApplicationMailer::Base
+class ContactMailer < ActionMailer::Base
     default to: 'svitri@hotmail.com'
     
     def contact_email(name, email, body)
@@ -6,6 +6,6 @@ class ContactController < ApplicationMailer::Base
         @email = email
         @body = body
         
-        mail(from: email, subject: "Contact From Message")
+        mail(from: email, subject: "Contact Form Message")
     end
 end
