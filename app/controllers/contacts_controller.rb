@@ -7,7 +7,7 @@ class ContactsController < ApplicationController
     def create
         @contact = Contact.new(contact_params)
         if @contact.save
-            name = params[:name]
+            name = params[:name][:contact]
             email = params[:contact][:email]
             body = params[:contact][:comments]
             ContactMailer.contact_email(name, email, body).deliver
