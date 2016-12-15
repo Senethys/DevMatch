@@ -2,7 +2,7 @@
 //Document ready. 
 $(document).on('turbolinks:load'), function(){
   var theForm = $('#pro_form');
-  var sumbmitBtn = $('#form-submit-btn');
+  var submitBtn = $('#form-submit-btn');
   
   //Set Stripe public key
   Stripe.setPublishableKey( $('meta[name="stripe-key"]').attr('content') );
@@ -41,7 +41,7 @@ $(document).on('turbolinks:load'), function(){
   
       if (error) {
         //If there are card errors, don't send to Stripe.
-        sumbmitBtn.prop('disabled', false).val("Sign Up");
+        submitBtn.prop('disabled', false).val("Sign Up");
       } else {
       //Send to card info to Stripe.
         Stripe.createToken({
