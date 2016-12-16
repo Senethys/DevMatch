@@ -20,77 +20,75 @@
 @import 'font-awesome';
 
 h1, h2, h3 {
-    font-family: 'Pathway Gothic One', sans-serif;
+  font-family: 'Pathway Gothic One', sans-serif;
 }
 
+.alert-notice, .alert-alert {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  margin-top: -14px;
+}
+
+
 .navbar, .home-callout {
-    background: #e96443; /* fallback for old browsers */
-    background: -webkit-gradient(linear, 0 0, 100% 0, from(#e96443), to(#904e95));
-    background: -webkit-linear-gradient(to left, #e96443, #904e95);
-    background: -moz-linear-gradient(to left, #e96443, #904e95);
-    background: -o-linear-gradient(to left, #e96443, #904e95);
-    background: linear-gradient(to left, #e96443, #904e95); /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #e96443; /* fallback for old browsers */
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(#e96443), to(#904e95));
+  background: -webkit-linear-gradient(to left, #e96443, #904e95);
+  background: -moz-linear-gradient(to left, #e96443, #904e95);
+  background: -o-linear-gradient(to left, #e96443, #904e95);
+  background: linear-gradient(to left, #e96443, #904e95); /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }            
 
 .home-callout {
-    color:white;
-    margin-top: -20px;
-    padding-top: 50px;
-    padding-bottom: 100px;
+  color:white;
+  margin-top: -20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 .navbar {
-    border-radius:initial;
-    border:none;
-    color:white;
+  border-radius:initial;
+  border:none;
+  color:white;
 }
 
 .navbar-brand { 
-    font-family: 'Pathway Gothic One', sans-serif;
-    font-weight:1000;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-weight:1000;
 }
 
 
 .navbar-default .navbar-nav > li > a, 
 .navbar-default .navbar-brand {
-    color: white;
-     &:hover{
-        opacity: 0.70;
-        color:white;
-     }
+  color: white;
+   &:hover{
+      opacity: 0.70;
+      color:white;
+   }
    
 }
 
 
 .navbar-default .navbar-toggle .icon-bar  {
-    background-color:white;
+  background-color:white;
 }
 
 .navbar-default .navbar-toggle {
-    border:2px solid white;
-    &:hover, &:focus {
-        background-color:#e91440;
-    }
+  border:2px solid white;
+  &:hover, &:focus {
+      background-color:#e91440;
+  }
 }
-
-.alert-notice {
-        display:none;
-}    
 
 
 .flash-container {
-      position: absolute;
-      width: 100%;
-}
-.alert-notice, .alert-alert {
-      text-align: center;
-      background: rgba(255, 255, 255, 0.3);
-      border-color: rgba(255, 255, 255, 0.5);
-      margin-top: -14px;
+  position: absolute;
+  width: 100%;
 }
 
 //home
 
 .home-signup-links{
-    margin-top:30px;
+  margin-top:30px;
 }
