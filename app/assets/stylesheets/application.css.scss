@@ -32,12 +32,13 @@ h1, h2, h3 {
 
 
 .navbar, .home-callout {
-  background: #e96443; /* fallback for old browsers */
-  background: -webkit-gradient(linear, 0 0, 100% 0, from(#e96443), to(#904e95));
-  background: -webkit-linear-gradient(to left, #e96443, #904e95);
-  background: -moz-linear-gradient(to left, #e96443, #904e95);
-  background: -o-linear-gradient(to left, #e96443, #904e95);
-  background: linear-gradient(to left, #e96443, #904e95); /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#185499+0,207cca+27,22b55d+91,42bc48+97 */
+background: #185499; /* Old browsers */
+background: -moz-linear-gradient(45deg,  #185499 0%, #207cca 27%, #22b55d 91%, #42bc48 97%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  #185499 0%,#207cca 27%,#22b55d 91%,#42bc48 97%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg,  #185499 0%,#207cca 27%,#22b55d 91%,#42bc48 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#185499', endColorstr='#42bc48',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }            
 
 .home-callout {

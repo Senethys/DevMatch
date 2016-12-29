@@ -1,13 +1,14 @@
 <div class="home-callout text-center container-fluid">
-  <h1>Welcome to DevMatch!</h1>
-  <h3>A membership site where entrepenours can meet developers</h3>
+  <h1>Welcome to a random site on the Internet!</h1>
+  <h3>You can become a member if you want</h3>
+  <p>And do absolutely nothing</p>
 </div>
   <div class="container home-signup-links">
     <div class ="row">
       <% if user_signed_in? %>
         <div class="col-md-6">
           <div class="well">
-            <h2 class ="text-center">Your Profile</h2>
+            <h2 class ="text-center">Your Profile, god knows why you would like to have one.</h2>
             <% if current_user.profile %>
               <%= link_to "Edit Profile", edit_user_profile_path(user_id: current_user.id), class: 'btn btn-default btn-lg btn-block' %>
               <%= link_to "View Profile", user_path(current_user.id), class: 'btn btn-default btn-lg btn-block' %>
@@ -19,22 +20,22 @@
         </div>
         <div class="col-md-6">
           <div class="well">
-            <h2 class="text-center">The Community</h2></br>
-            <p class="text-center">Visist the community to meet other devs or investors.</p>
+            <h2 class="text-center">Community page</h2></br>
+            <p class="text-center">What the h2 tag says.</p>
             <%= link_to "Visit the community", users_path, class: 'btn btn-default btn-lg btn-block' %>
       <% else %> 
         <div class= "col-md-6">
           <div class="well">
-            <h2 class="text-center">Basic Membership</h2>
-             <h4>Sign up for free and get basic access to the community.</h4>
+            <h2 class="text-center">Useless Membership 1</h2>
+             <h4>Sign up and get basic access to the community.</h4>
              </br>
             <%= link_to "Sign in with Basic", new_user_registration_path(plan: @basic_plan.id), class: "btn btn-primary btn-lg btn-block" %>
           </div>
         </div>
         <div class= "col-md-6">
           <div class="well">
-            <h2 class="text-center">Pro Membership</h2>
-            <h4>Sign up for the pro account for $10/month and get access to the community and contact information!</h4>
+            <h2 class="text-center">Useless Membership 2</h2>
+            <h4>There is absolutely no difference between the two plans. </h4>
             <%= link_to "Sign in with Pro", new_user_registration_path(plan: @pro_plan.id), class: "btn btn-success btn-lg btn-block" %>
            </div>
         </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DevMatch</title>
+    <title>Webpage</title>
     <%= csrf_meta_tags %>
     <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -23,8 +23,8 @@
         <span class="icon-bar"></span>
       </button>
        <%= link_to root_path, class: "navbar-brand" do %>
-       <i class="fa fa-group"></i>
-       DevMatch
+       <i class="fa fa-sticky-note"></i>
+       The logo goes here
        <% end %>
     </div>
 
@@ -45,7 +45,7 @@
         <% end %>
         <li><%=link_to "About", about_path %></li>
         <li><%=link_to "Career", jobs_path %></li>
-        <li><%=link_to "Contact Us", new_contact_path %></li>
+        <li><%=link_to "Contact Me", new_contact_path %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
